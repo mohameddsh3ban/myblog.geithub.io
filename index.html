@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <nav class="p-6 flex justify-between md:justify-evenly items-center">
+      <!-- logo -->
+      <div class="text-teal-600 text-2xl">XIII</div>
+      <!-- main content  -->
+      <div class="text-teal-600 text-sm hidden md:block space-x-6">
+        <a href="index.html">Home</a>
+        <a href="">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="">Blog</a>
+      </div>
+      <!-- button contact us  -->
+      <div class="text-white hidden md:block bg-teal-600 py-1 px-3">
+        <a href="">
+          <button>Contact Us</button>
+        </a>
+      </div>
+      <div class=" z-50 block ham md:hidden focus:outline-none">
+  <button 
+  id="menu-btn" 
+  type="button"
+   class=" block ham focus:outline-none">
+    <span class=" ham-t"></span>
+    <span class="ham-m"></span>
+    <span class=" ham-b"></span>
+  </button>
+  
+</div>
+<aside  id="default-sidebar" class="fixed top-0 hidden right-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+     <ul class="space-y-2 pt-8 font-medium">
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                 <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/>
+                 <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
+              </svg>
+              <span class="ml-3">Dashboard</span>
+           </a>
+        </li>
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                 <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
+              <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
+           </a>
+        </li>
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"/>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+              <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+           </a>
+        </li>
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                 <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+           </a>
+        </li>
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                 <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+           </a>
+        </li>
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+           </a>
+        </li>
+        <li>
+           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                 <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                 <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+           </a>
+        </li>
+     </ul>
+  </div>
+</aside>
+</nav>
+    </nav>
+    <!-- fashion -->
+    <section class="">
+      <!-- image  -->
+      <div class="flex justify-end md:hidden ">
+        <img
+          src="./images/pexels-cottonbro-8763895.jpg"
+          class="w-full"
+          alt=""
+        />
+      </div>
+      <!-- float div  -->
+      <div
+        class="bg-teal-500 px-8 py-12 md:w-1/2   space-y-6 md:absolute  md:ml-12 md:mt-20 duration-200 lg:mt-36 xl:mt:44"
+      >
+        <h1
+          class="md:text-4xl lg:text-5xl xl:text-6xl text-3xl text-center italic"
+        >
+          The latest fashion trends and news
+        </h1>
+        <p class="font-thin text-sm">
+          Stay up to date with the latest fashion trends and news! Find out
+          what's hot, which styles are in, and get styling tips from our
+          experts. Get all the info you need to stay ahead of the curve today!
+        </p>
+        <div class="text-center space-x-4">
+          <button
+            class="uppercase bg-teal-700 text-white px-4 py-1 border hover:bg-transparent hover:text-teal-700 duration-200 border-teal-700"
+          >
+            Learn More
+          </button>
+          <button
+            class="uppercase border hover:bg-teal-700 hover:text-white border-teal-700 text-teal-700 px-4 duration-200 py-1"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="md:flex justify-end hidden">
+        <img
+          src="./images/pexels-cottonbro-8763895.jpg"
+          class="lg:w-2/3"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- amp -->
+    <section
+      class="bg-[#e0e0e0] py-8 flex flex-col justify-center items-center mx-auto"
+    >
+      <h1 class="text-teal-500 lg:text-2xl text-base pb-4 font-light">
+        Amp Up Your Style with These Streetwear Trends
+      </h1>
+      <h2 class="xl:text-6xl lg:text-5xl  md:text-4xl sm:text-3xl text-xl    pb-8 italic">The Bold and Rebellious New Look</h2>
+      <p class="font-thin w-3/5 text-center ">
+        Fashion is constantly evolving, and streetwear has come back with a
+        vengeance. This trend gives you the opportunity to dress in a bolder and
+        more rebellious style than ever before. From graphic tees and unique
+        jackets, to acid-wash jeans, there are plenty of options when it comes
+        to finding pieces that will make your look stand out from the crowd.
+        Don’t be afraid to break from traditional fashion standards as you
+        embrace this innovative trend - breathe fresh life into your wardrobe
+        while still looking effortlessly cool!
+      </p>
+    </section>
+    <!-- posts  -->
+    <section class="flex lg:justify-center lg:items-center   overflow-x-scroll lg:overflow-clip  py-8 space-x-12">
+      <div>
+        <!-- image  -->
+        <div class="w-80 h-80 bg-teal-600"></div>
+        <!-- details  -->
+        <div class="py-4 space-y-2">
+          <h1 class="text-teal-500 text-2xl">Post title</h1>
+          <h2 class="text-lg">12-5-2024</h2>
+          <h3 class="text-gray-400 font-thin">Auther Name</h3>
+          <p class="text-gray-400 font-thin">Description text</p>
+        </div>
+      </div>
+      <div>
+        <!-- image  -->
+        <div class="w-80 h-80 bg-teal-600"></div>
+        <!-- details  -->
+        <div class="py-4 space-y-2">
+          <h1 class="text-teal-500 text-2xl">Post title</h1>
+          <h2 class="text-lg">12-5-2024</h2>
+          <h3 class="text-gray-400 font-thin">Auther Name</h3>
+          <p class="text-gray-400 font-thin">Description text</p>
+        </div>
+      </div>
+      <div>
+        <!-- image  -->
+        <div class="w-80 h-80 bg-teal-600"></div>
+        <!-- details  -->
+        <div class="py-4 space-y-2">
+          <h1 class="text-teal-500 text-2xl">Post title</h1>
+          <h2 class="text-lg">12-5-2024</h2>
+          <h3 class="text-gray-400 font-thin">Auther Name</h3>
+          <p class="text-gray-400 font-thin">Description text</p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#e0e0e0] py-12">
+      <!-- post  container  -->
+      <div class="flex flex-col items-center justify-center space-y-6">
+        <!-- post 1  -->
+        <div
+          class="flex justify-start items-center w-[75%] px-8 border-b border-black pb-6"
+        >
+          <div class="w-80 h-64 bg-teal-500"></div>
+          <div class="space-y-4 ml-12">
+            <h1 class="text-2xl text-teal-500">Post Title</h1>
+            <div class="flex space-x-4">
+              <h2 class="text-lg">12-5-2024</h2>
+              <p>-</p>
+              <h3 class="text-gray-500 font-thin">Auther Name</h3>
+            </div>
+
+            <p class="font-thin text-gray-500 text-lg">Description text</p>
+          </div>
+        </div>
+        <!-- post 2  -->
+        <div
+          class="flex justify-start items-center w-[75%] px-8 border-b border-black pb-6"
+        >
+          <div class="w-80 h-64 bg-teal-500"></div>
+          <div class="space-y-4 ml-12">
+            <h1 class="text-2xl text-teal-500">Post Title</h1>
+            <div class="flex space-x-4">
+              <h2 class="text-lg">12-5-2024</h2>
+              <p>-</p>
+              <h3 class="text-gray-500 font-thin">Auther Name</h3>
+            </div>
+
+            <p class="font-thin text-gray-500 text-lg">Description text</p>
+          </div>
+        </div>
+
+        <!-- post 3  -->
+        <div class="flex justify-start items-center w-[75%] px-8">
+          <div class="w-80 h-64 bg-teal-500"></div>
+          <div class="space-y-4 ml-12">
+            <h1 class="text-2xl text-teal-500">Post Title</h1>
+            <div class="flex space-x-4">
+              <h2 class="text-lg">12-5-2024</h2>
+              <p>-</p>
+              <h3 class="text-gray-500 font-thin">Auther Name</h3>
+            </div>
+
+            <p class="font-thin text-gray-500 text-lg">Description text</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my story  -->
+    <section class="px-16 py-8 flex justify-between items-center ">
+      <div class="space-y-8  ">
+        <h1 class="text-6xl">MY Story</h1>
+        <p class="font-thin text-sm">
+          The family stands together, beaming with love and joy as they record
+          their life's most precious memories. Every moment is special, from
+          first birthdays to graduations, anniversaries and holidays. Together,
+          these moments will become a legacy that the family can cherish for
+          years to come. As their children look back upon these videos in the
+          future, they'll remember all the love and happiness shared in this
+          beautiful family album. The heartwarming video captures a part of life
+          that will last forever.
+        </p>
+        <div class="mt-2 ">
+          <a href="" class="px-4 py-2 hover:bg-teal-600 hover:text-white border border-teal-600 text-teal-600">
+            <button class="uppercase">
+              view more
+            </button>
+          </a>
+        </div>
+
+      </div>
+      <div class="flex justify-end" >
+<img src="./images/5oscar-keys-AmPRUnRb6N0-unsplash.jpg" class="w-3/4" alt="">
+      </div>
+    </section>
+    
+    <!-- new Look  -->
+    <section class="bg-[#e0e0e0] py-12 text-center">
+<h1 class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-2xl text-xl">The Bold and Rebellious New Look</h1>
+    </section>
+    <!-- photos grid  -->
+    <section class=" md:px-12 md:py-20 " > 
+<div class="grid grid-cols-6 gap-1">
+  <div>
+    <img src="./images/2flaunter-ytn_o0ymi9w-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/3pexels-cottonbro-4937224.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/4cesar-la-rosa-hbaddptme1q-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/5khaled-ghareeb-moxm5jc8i0a-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images//6luobulinka-fo4mqzi1c0m-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/7charlota-blunarova-r5xhi_h44am-unsplash.jpg" alt="">
+  </div>
+ 
+ 
+ 
+
+
+  
+  <div>
+    <img src="./images/4cesar-la-rosa-hbaddptme1q-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/7charlota-blunarova-r5xhi_h44am-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/5khaled-ghareeb-moxm5jc8i0a-unsplash.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/2flaunter-ytn_o0ymi9w-unsplash.jpg" alt="">
+  </div>
+ 
+ 
+ 
+ 
+  <div>
+    <img src="./images/3pexels-cottonbro-4937224.jpg" alt="">
+ </div>
+ <div>
+  <img src="./images/6luobulinka-fo4mqzi1c0m-unsplash.jpg" alt="">
+</div>
+</div>
+    </section>
+
+    
+        <!-- subscribe  -->
+        <section class="bg-[#e0e0e0] duration-300 grid-rows-2 md:grid-rows-1 grid md:grid-cols-2">
+          <div class="flex flex-col justify-center items-center space-y-2 md:space-y-5">
+            <h1 class="md:text-3xl text-2xl">Subscribe Form</h1>
+            <h2 class=" font-thin text-xs sm:text-sm lg:text-base max-w-xl text-center mx-2">
+              Want to be in the know? Subscribe to a newsletter to get all news and weekly updates.
+            </h2>
+            <div class="border-b pt-8 w-1/2  border-black"><input placeholder="Enter Your Email Here" type="text" class="focus:outline-none  w-full py-2 text-center placeholder:text-black bg-transparent"></div>
+            <div class="pt-2">
+              <a href="" class="hover:bg-teal-700 border mt-4 border-teal-700 uppercase text-teal-700 hover:text-white duration-300 py-2 px-4 ">
+                <button class="uppercase">
+                  subscribe
+                </button>
+              </a>
+              
+            </div>
+          </div>
+          <div> <img src="./images/end-pexels-cottonbro-7870748.jpg"  alt=""></div>
+              </section>
+    <!-- end  -->
+    <section class="text-center p-12 text-3xl text-teal-600">
+      <h1>XIII</h1>
+    </section>
+  <script src="./menu.js"></script>
+  </body>
+</html>

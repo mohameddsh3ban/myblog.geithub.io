@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.ham{
+transform:translateY(3px);
+ cursor:pointer;
+ width:24px;
+ height:24px;
+ transition:all 0.25s;
+ position:relative;
+
+ }
+ #menu{
+  transition:all 0.5s;
+ }
+.ham-t,
+.ham-m,
+.ham-b{
+  position:absolute;
+  width:24px;
+  height:2px;
+  top:0;
+  left:0;
+  background:black;
+  transform:rotate(0);
+  transition: all 0.5s;
+
+}
+body.dark,
+.ham-t,
+.ham-m,
+.ham-b{
+background:teal
+}
+.ham-m{
+  transform:translateY(7px);
+}
+.ham-b{
+  transform:translateY(14px);
+}
+/* .ham-m:hover{
+  transform:translateY(12px);
+}
+.ham-b:hover{
+  transform:rotate(180deg) translateY(-14px)  ;
+  transition: all 0.1s;
+} */
+.open{
+  transform:rotate(90deg);
+}
+.open .ham-t{
+  transform:rotate(45deg) translateY(20px) translateX(1px);
+}
+.open .ham-m{
+  
+display:none;
+}
+.open .ham-b{
+  transform:rotate(-45deg) translateY(1px) translateX(-20px);
+}
